@@ -4,8 +4,8 @@
 
 using namespace std;
 
-//transaction data
-struct Tact{
+//Transactionion data
+struct Transaction{
     double amount;
     string senderKey;
     string receiverKey;
@@ -23,7 +23,7 @@ class Block{
 
     public:
         //constructor
-        Block(int idx, Tact d, size_t prevHash);
+        Block(int idx, Transaction d, size_t prevHash);
 
         //get original hash
         size_t getHash();
@@ -31,12 +31,26 @@ class Block{
         //get previous hash
         size_t getPreviousHash();
         
-        //transaction data
-        Tact data;
+        //Transactionion data
+        Transaction data;
         
         //validate hash
         bool isHashValid();
 };
+
+//constructor 
+Block::Block(int idx, Transaction d, size_t prevHash){
+    index = idx;
+    data = d;
+    previousHash = prevHash;
+    blockHash = generateHash();
+}
+
+//private functions
+size_t Block::generateHash(){
+    hash<string> hash1;
+    hash<string> hash2;
+}
 
 
 //block chain
@@ -52,6 +66,7 @@ class BlockChain{
         BlockChain();
 
         //public functions
-        
-
+        void addBlock(Transaction data);
+        void isChainValid();
 };
+
