@@ -1,2 +1,7 @@
+/build/
+/bin/
 
-javascript/node_modules/
+.cs_files
+.notifier
+/.undodir/
+.gdb_history
