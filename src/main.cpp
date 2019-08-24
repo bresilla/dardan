@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <cstdio>
 
-#include "include/block.hpp"
+#include "inc/block.h"
 
 int main(){
 }

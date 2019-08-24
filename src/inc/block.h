@@ -2,23 +2,22 @@
 #include <ctime>
 #include <vector>
 #include <string>
-using namespace std;
 
 //Transactionion data
 struct Transaction{
     double amount;
-    string senderKey;
-    string receiverKey;
-    time_t timestamp;
+    std::string senderKey;
+    std::string receiverKey;
+    std::time_t timestamp;
 };
 
 //block class
 class Block{
     private:
         int index;
-        size_t blockHash;
-        size_t previousHash;
-        size_t generateHash();
+        std::size_t blockHash;
+        std::size_t previousHash;
+        std::size_t generateHash();
     public:
         //constructor
         Block(int idx, Transaction d, size_t prevHash);
@@ -32,14 +31,13 @@ class Block{
         bool isHashValid();
 };
 
-
 //block chain
 class BlockChain{
     private:
         Block createGenesisBlock();
     public:
         //public chain
-        vector<Block> chain;
+        std::vector<Block> chain;
         //constructor
         BlockChain();
         //public functions

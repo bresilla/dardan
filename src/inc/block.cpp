@@ -1,6 +1,4 @@
-#include "block.hpp"
-
-using namespace std;
+#include "block.h"
 
 //constructor
 Block::Block(int idx, Transaction d, size_t prevHash){
@@ -12,8 +10,6 @@ Block::Block(int idx, Transaction d, size_t prevHash){
 
 //private functions
 size_t Block::generateHash(){
-    hash<string> hash1;
-    hash<string> hash2;
+    std::hash<std::string> hash1;
+    std::hash<std::string> hash2;
 }
-
-

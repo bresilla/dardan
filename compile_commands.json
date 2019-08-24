@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/bresilla/DATA/CODE/PROJECTS/WORK/tull/build/src",
+  "command": "/usr/bin/c++   -I/home/bresilla/DATA/CODE/PROJECTS/WORK/tull/src    -o CMakeFiles/main.dir/main.cpp.o -c /home/bresilla/DATA/CODE/PROJECTS/WORK/tull/src/main.cpp",
+  "file": "/home/bresilla/DATA/CODE/PROJECTS/WORK/tull/src/main.cpp"
+},
+{
+  "directory": "/home/bresilla/DATA/CODE/PROJECTS/WORK/tull/build/src",
+  "command": "/usr/bin/c++      -o CMakeFiles/block.dir/inc/block.cpp.o -c /home/bresilla/DATA/CODE/PROJECTS/WORK/tull/src/inc/block.cpp",
+  "file": "/home/bresilla/DATA/CODE/PROJECTS/WORK/tull/src/inc/block.cpp"
+}
+]
