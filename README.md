@@ -1,1 +1,1 @@
-# TULL (a tiny blockchain framework)
+# A simple CMAKE template
