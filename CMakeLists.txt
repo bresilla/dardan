@@ -37,7 +37,7 @@ set(PROJECT_BUILD                              "${PROJECT_PATH}/build")
 set(SRC_SRC                                    "${PROJECT_PATH}/source")
 set(INC_SRC                                    "${PROJECT_PATH}/include")
 set(EXT_SRC                                    "${PROJECT_PATH}/external")
-set(UTL_SRC                                    "${PROJECT_PATH}/util")
+set(UTL_SRC                                    "${PROJECT_PATH}/utils")
 set(TEST_SRC                                   "${PROJECT_PATH}/test")
 
 set(LIB_BUILD                                  "${PROJECT_BUILD}/lib")
@@ -127,7 +127,7 @@ set(LOCEXT ncurses)
 
 file(GLOB UTIL_FILES "${UTL_SRC}/*.hpp")
 file(GLOB HEAD_FILES "${INC_SRC}/${PROJECT_NAME}/*.h" "${INC_SRC}/${PROJECT_NAME}/*.hpp")
-file(GLOB CODE_FILES "${SRC_SRC}/${PROJECT_NAME}/*.c" "${SRC_SRC}/${PROJECT_NAME}/*.cpp")
+file(GLOB CODE_FILES "${SRC_SRC}/*.c" "${SRC_SRC}/*.cpp")
 
 add_library(${PROJECT_NAME} ${UTIL_FILES} ${HEAD_FILES} ${CODE_FILES})
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_11)
